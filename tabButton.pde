@@ -5,8 +5,8 @@ class tabButton {
   int myHeight = 30;
   int numOfTabs;
   color backgroundColor = color(30, 30, 30);
-  color inactiveColor = color(150, 150, 150);
-  color forgroundColor = color(200, 200, 200);
+  color inactiveColor = color(225, 225, 225);
+  color forgroundColor = color(185, 185, 185);
   int activeTab = 0;
   String[] mytextLabels;
 

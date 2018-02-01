@@ -3,7 +3,7 @@ class toggleButton {
   int myYPos = 0;
   int myWidth = 60;
   int myHeight = 20;
-  color backgroundColor = color(30, 30, 30);
+  color backgroundColor = color(0);
   color forgroundColor = color(200, 200, 200);
   boolean myStateActive = false;
 

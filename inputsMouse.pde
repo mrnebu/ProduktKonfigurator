@@ -5,6 +5,8 @@ void mousePressed() {
   sliderFrontHeck.mousePressed();
   toggleButtonFoxtail.mousePressed();
   toggleButtonFlux.mousePressed();
+  toggleButtonTintDoor.mousePressed();
+  toggleButtonTintFrontHeck.mousePressed();
  
   
   int lastRimSelection = tabButtonRims.activeTab;
