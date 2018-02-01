@@ -1,8 +1,8 @@
 class tabButton {
   int myXPos = 0;
   int myYPos = 0;
-  int myWidth = 300;
-  int myHeight = 30;
+  int myWidth = 250;
+  int myHeight = 25;
   int numOfTabs;
   color backgroundColor = color(30, 30, 30);
   color inactiveColor = color(225, 225, 225);

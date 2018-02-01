@@ -1,4 +1,3 @@
-// Inputs
 
 void mousePressed() {
   sliderDoor.mousePressed();

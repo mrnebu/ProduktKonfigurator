@@ -37,15 +37,15 @@ void setup() {
   toggleButtonFoxtail = new toggleButton(750, 505);
   toggleButtonFlux = new toggleButton(750, 605);
     
-  String[] tabLabelsRims = {"     1", "    2", "    3", "    4"};
-  tabButtonRims = new tabButton(370, 500, 4, tabLabelsRims); //Position Rimstab
+  String[] tabLabelsRims = {"    1", "   2", "   3", "   4"};
+  tabButtonRims = new tabButton(370, 500, 4, tabLabelsRims); 
   tabButtonRims.activeTab = 0;
   
-  String[] tabLabelsDecals = {" OFF ", "    1", "    2", "    3"};
-  tabButtonDecals = new tabButton(370, 600, 4, tabLabelsDecals); //Position Decalstab
+  String[] tabLabelsDecals = {"OFF", "   1", "   2", "   3"};
+  tabButtonDecals = new tabButton(370, 600, 4, tabLabelsDecals); 
   tabButtonDecals.activeTab = 0;
   
-  // Font + Pictures
+  //Font + Pictures
   myFontUI = createFont("cs_regular.ttf", 24);
   Ebene1 = loadImage("Ebene1.png");  
   Door = loadImage("Door.png");  
@@ -71,31 +71,31 @@ void draw() {
 }
 
 void drawCar() {
-  // Car Ebeen1
+  //Car Ebeen1
   noTint();
   image(Ebene1, 0, 0);
   colorMode(HSB, 360, 100, 100);
   
-  // Door
+  //Door
   noTint();
   tint(sliderDoor.myValue * 360, 75, 100);
   colorMode(HSB, 360, 100, 100);
   image(Door, 0, 0);
   
-  // FrontHeck
+  //FrontHeck
   noTint();
   tint(sliderFrontHeck.myValue * 360, 75, 100);
   image(FrontHeck, 0, 0);
   noTint();
      
-  // ToggleButton
-  // Foxtail
+  //ToggleButton
+  //Foxtail
   if (toggleButtonFoxtail.myStateActive) {
     image(AddonFoxtail, 0, 0);
      } else {
      }
         
- //Flux
+  //Flux
   if (toggleButtonFlux.myStateActive) {
     image(AddonFlux, 0, 0);
     file.play(); file.amp(0.08); file.loop();
@@ -103,19 +103,19 @@ void drawCar() {
     file.stop();
     }
     
- //DoorNOTint
+  //DoorNOTint
  if (toggleButtonTintDoor.myStateActive) {
     image(Door, 0, 0); noTint();
     } else {
     }
     
- //FrontHeckNOTint
+  //FrontHeckNOTint
   if (toggleButtonTintFrontHeck.myStateActive) {
     image(FrontHeck, 0, 0); noTint();
     } else {
     }
     
-      // Rims
+  //Rims
   if (tabButtonRims.activeTab == 0) {
     image(Rims1985,  0, 0); textFont(myFontUI, 24); fill(0); text("Classic", 465, 480);  
     }else if (tabButtonRims.activeTab == 1) {
@@ -126,7 +126,7 @@ void drawCar() {
      image(Rims1955, 0, 0);  textFont(myFontUI, 24); fill(0); text("1955", 465, 480);   
     } 
  
-  // Decals
+  //Decals
   if (tabButtonDecals.activeTab == 0) {
     }else if (tabButtonDecals.activeTab == 1) {
      image(DecalMinion, 0, 0);  textFont(myFontUI, 24); fill(0); text("Minion", 470, 580);  
@@ -152,14 +152,14 @@ void drawControls() {
   //Text for Sliders/Buttons
   textFont(myFontUI, 24);
   fill(0);  
-    //Doors
+  //Doors
   text("Door Color", 110, 480);
-    //FrontHeck  
+  //FrontHeck  
   text("Front & Heck Color", 110, 580);
-   //Addons
+  //Addons
   text("Foxtail", 820, 520);
   text("Timetravel", 820, 620); 
-   //Text for Tabmenues
+  //Text for Tabmenues
   text("Felgen", 380, 480);  
   text("Decals", 380, 580);
   }
