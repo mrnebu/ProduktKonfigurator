@@ -32,14 +32,12 @@ void setup() {
   sliderFrontHeck.myValue = 0.5;
   toggleButtonFoxtail = new toggleButton(720, 450);
   toggleButtonFlux = new toggleButton(720, 550);
-  
-
-  
-  String[] tabLabelsRims = {"1", "2", "3", "4"};
+    
+  String[] tabLabelsRims = {"     1", "    2", "    3", "    4"};
   tabButtonRims = new tabButton(350, 450, 4, tabLabelsRims); //Position Rimstab
   tabButtonRims.activeTab = 0;
   
-  String[] tabLabelsDecals = {"  OFF ", "    1", "    2", "    3"};
+  String[] tabLabelsDecals = {" OFF ", "    1", "    2", "    3"};
   tabButtonDecals = new tabButton(350, 550, 4, tabLabelsDecals); //Position Decalstab
   tabButtonDecals.activeTab = 0;
   
