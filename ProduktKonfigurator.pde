@@ -26,19 +26,19 @@ PImage AddonFoxtail;
 void setup() {
   size(1024, 768);
    
-  sliderDoor = new slider(40, 450);
+  sliderDoor = new slider(40, 500);
   sliderDoor.myValue = 0.5;
-  sliderFrontHeck = new slider(40, 550);
+  sliderFrontHeck = new slider(40, 600);
   sliderFrontHeck.myValue = 0.5;
-  toggleButtonFoxtail = new toggleButton(720, 450);
-  toggleButtonFlux = new toggleButton(720, 550);
+  toggleButtonFoxtail = new toggleButton(750, 500);
+  toggleButtonFlux = new toggleButton(750, 600);
     
   String[] tabLabelsRims = {"     1", "    2", "    3", "    4"};
-  tabButtonRims = new tabButton(350, 450, 4, tabLabelsRims); //Position Rimstab
+  tabButtonRims = new tabButton(350, 500, 4, tabLabelsRims); //Position Rimstab
   tabButtonRims.activeTab = 0;
   
   String[] tabLabelsDecals = {" OFF ", "    1", "    2", "    3"};
-  tabButtonDecals = new tabButton(350, 550, 4, tabLabelsDecals); //Position Decalstab
+  tabButtonDecals = new tabButton(350, 600, 4, tabLabelsDecals); //Position Decalstab
   tabButtonDecals.activeTab = 0;
   
   // Font + Pictures
@@ -87,23 +87,23 @@ void drawCar() {
   
   // Rims
   if (tabButtonRims.activeTab == 0) {
-    image(Rims1985,  0, 0); textFont(myFontUI, 24); fill(0); text("Classic", 445, 430);  
+    image(Rims1985,  0, 0); textFont(myFontUI, 24); fill(0); text("Classic", 445, 480);  
     }else if (tabButtonRims.activeTab == 1) {
-     image(RimsCountach, 0, 0);  textFont(myFontUI, 24); fill(0); text("Countach", 445, 430);  
+     image(RimsCountach, 0, 0);  textFont(myFontUI, 24); fill(0); text("Countach", 445, 480);  
     } else if (tabButtonRims.activeTab == 2) {
-     image(RimsF40, 0, 0); textFont(myFontUI, 24); fill(0); text("F40", 445, 430);  
+     image(RimsF40, 0, 0); textFont(myFontUI, 24); fill(0); text("F40", 445, 480);  
      } else if (tabButtonRims.activeTab == 3) {
-     image(Rims1955, 0, 0);  textFont(myFontUI, 24); fill(0); text("1955", 445, 430);   
+     image(Rims1955, 0, 0);  textFont(myFontUI, 24); fill(0); text("1955", 445, 480);   
     } 
  
   // Decals
   if (tabButtonDecals.activeTab == 0) {
     }else if (tabButtonDecals.activeTab == 1) {
-     image(DecalMinion, 0, 0);  textFont(myFontUI, 24); fill(0); text("Minion", 445, 530);  
+     image(DecalMinion, 0, 0);  textFont(myFontUI, 24); fill(0); text("Minion", 445, 580);  
     } else if (tabButtonDecals.activeTab == 2) {
-     image(DecalKitty, 0, 0); textFont(myFontUI, 24); fill(0); text("Hello Kitty", 445, 530);  
+     image(DecalKitty, 0, 0); textFont(myFontUI, 24); fill(0); text("Hello Kitty", 445, 580);  
      } else if (tabButtonDecals.activeTab == 3) {
-     image(DecalFlames, 0, 0);  textFont(myFontUI, 24); fill(0); text("Flames", 445, 530);   
+     image(DecalFlames, 0, 0);  textFont(myFontUI, 24); fill(0); text("Flames", 445, 5);   
     } 
     
   // ToggleButton
@@ -135,19 +135,17 @@ void drawControls() {
   textFont(myFontUI, 24);
   fill(0);  
     //Doors
-  text("Door Color", 40, 430);
+  text("Door Color", 40, 480);
     //FrontHeck  
-  text("Front & Heck Color", 40, 530);
+  text("Front & Heck Color", 40, 580);
    //Addons
-  text("Foxtail", 720, 430);
-  text("Timetravel", 720, 530); 
+  text("Foxtail", 750, 480);
+  text("Timetravel", 750, 580); 
   
   //Text for Tabmenues
   textFont(myFontUI, 24);
-  fill(0);
-  text("Felgen", 360, 430);
-  
+  text("Felgen", 360, 480);  
   textFont(myFontUI, 24);
   fill(0);
-  text("Decals", 360, 530);
+  text("Decals", 360, 580);
   }
